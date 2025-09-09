@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogireddy Mohanreddy | Senior System Administrator</title>
+    <meta name="description" content="Professional portfolio of Bogireddy Mohanreddy - Senior System Administrator with 5+ years experience in IT infrastructure optimization, security, and cost reduction.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        /* Custom styles and animations */
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+        }
+        
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% {
+                transform: translate3d(0,0,0);
+            }
+            40%, 43% {
+                transform: translate3d(0,-30px,0);
+            }
+            70% {
+                transform: translate3d(0,-15px,0);
+            }
+            90% {
+                transform: translate3d(0,-4px,0);
+            }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .section-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #374151 100%);
+        }
+        
+        /* Professional photo styling */
+        .profile-image {
+            transition: all 0.3s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-slate-800 cursor-pointer hover:text-blue-600 transition-colors" onclick="scrollToSection('hero')">
+                    Portfolio
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <button onclick="scrollToSection('about')" class="text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">About</button>
+                    <button onclick="scrollToSection('skills')" class="text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Skills</button>
+                    <button onclick="scrollToSection('experience')" class="text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Experience</button>
+                    <button onclick="scrollToSection('projects')" class="text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Projects</button>
+                    <button onclick="scrollToSection('contact')" class="text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Contact</button>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700 hover:text-blue-600 transition-colors">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="md:hidden mt-4 py-4 border-t border-slate-200 hidden">
+                <button onclick="scrollToSection('about')" class="block w-full text-left py-2 text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">About</button>
+                <button onclick="scrollToSection('skills')" class="block w-full text-left py-2 text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Skills</button>
+                <button onclick="scrollToSection('experience')" class="block w-full text-left py-2 text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Experience</button>
+                <button onclick="scrollToSection('projects')" class="block w-full text-left py-2 text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Projects</button>
+                <button onclick="scrollToSection('contact')" class="block w-full text-left py-2 text-slate-700 hover:text-blue-600 transition-colors duration-200 font-medium">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-20 px-6 hero-gradient">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="space-y-8 section-reveal">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl lg:text-7xl font-bold text-slate-800 leading-tight">
+                            Bogireddy
+                            <span class="block text-blue-600">Mohanreddy</span>
+                        </h1>
+                        <h2 class="text-2xl lg:text-3xl text-slate-600 font-light">
+                            Senior System Administrator
+                        </h2>
+                        <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                            Results-driven System Administrator with 5+ years of experience optimizing IT infrastructures, 
+                            reducing costs, and strengthening security postures across diverse environments.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="scrollToSection('contact')" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg transition-all duration-300 btn-hover flex items-center">
+                            <i data-lucide="mail" class="mr-2 w-5 h-5"></i>
+                            Get In Touch
+                        </button>
+                        <button class="border border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-3 rounded-lg text-lg transition-all duration-300 btn-hover flex items-center">
+                            <i data-lucide="download" class="mr-2 w-5 h-5"></i>
+                            Download CV
+                        </button>
+                    </div>
+
+                    <div class="flex space-x-6">
+                        <a href="mailto:bmr11111@gmail.com" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mohanreddy-bogireddy" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a href="https://github.com/BLAZINGLEO" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">
+                            <i data-lucide="github" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Professional Photo -->
+                <div class="flex justify-center lg:justify-end section-reveal">
+                    <div class="relative">
+                        <div class="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-100 profile-image">
+                            <img 
+                                src="https://customer-assets.emergentagent.com/job_azure-specialist/artifacts/5gfxe4p9_Media.jpg"
+                                alt="Bogireddy Mohanreddy - Senior System Administrator"
+                                class="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-blue-700 transition-colors" onclick="scrollToSection('about')">
+                            <i data-lucide="arrow-down" class="text-white animate-bounce w-6 h-6"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Story -->
+                <div class="space-y-6 section-reveal">
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-4">My Professional Journey</h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        With over 5 years of experience in systems administration, I've built my career on a foundation 
+                        of technical excellence and strategic thinking. My journey began at The Deccan Hospital, where I 
+                        honed my troubleshooting skills and learned the importance of system reliability in critical environments.
+                    </p>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Progressing through Adaps IT to my current role as Senior System Administrator at Adaps Digitale, 
+                        I've consistently demonstrated my ability to optimize infrastructures, negotiate cost-effective solutions, 
+                        and maintain the highest security standards. My approach combines technical expertise with business acumen, 
+                        ensuring technology solutions align with organizational goals.
+                    </p>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        What drives me is the opportunity to not just maintain systems, but to continuously improve them. 
+                        Whether it's achieving 25% cost savings on endpoint protection or maintaining full compliance standards, 
+                        I believe in delivering measurable value through proactive system management. Currently pursuing 
+                        CSA certification to expand my expertise in Security Operations with IBM Q Radar and Microsoft Sentinel.
+                    </p>
+                </div>
+
+                <!-- Highlights Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 section-reveal">
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="mb-4">
+                            <i data-lucide="target" class="h-8 w-8 text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-slate-800 mb-2">Results-Driven</h4>
+                        <p class="text-slate-600">Consistently delivered measurable improvements in cost savings and operational efficiency</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="mb-4">
+                            <i data-lucide="award" class="h-8 w-8 text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-slate-800 mb-2">Certified Expert</h4>
+                        <p class="text-slate-600">Multiple certifications including Azure Administrator, CEH, CCNA, and ISO 27001</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="mb-4">
+                            <i data-lucide="users" class="h-8 w-8 text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-slate-800 mb-2">Team Leader</h4>
+                        <p class="text-slate-600">Proven track record of mentoring junior staff and leading cross-functional projects</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="mb-4">
+                            <i data-lucide="zap" class="h-8 w-8 text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-slate-800 mb-2">Proactive Approach</h4>
+                        <p class="text-slate-600">Known for going beyond core responsibilities to enhance systems and processes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 section-reveal">
+                <div class="text-center">
+                    <div class="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">5+</div>
+                    <div class="text-slate-600">Years Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">25%</div>
+                    <div class="text-slate-600">Cost Reduction</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">100%</div>
+                    <div class="text-slate-600">Compliance Rate</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">9+</div>
+                    <div class="text-slate-600">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">Skills & Expertise</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    Comprehensive technical expertise spanning cloud infrastructure, security, and systems administration
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 section-reveal">
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="cloud" class="h-8 w-8 text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-slate-800">Cloud & Virtualization</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Microsoft Azure
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Office 365 Administration
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Azure AD
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            VM Management
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Cloud Migration
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="shield" class="h-8 w-8 text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-slate-800">Security & Compliance</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Kaspersky Endpoint Protection
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            ISO 27001
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            ISMS Implementation
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Security Auditing
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Vulnerability Assessment
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="network" class="h-8 w-8 text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-slate-800">Network Administration</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            SonicWall Firewalls
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Cisco CCNA R&S
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            DNS Management
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Network Optimization
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            ISP Management
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="server" class="h-8 w-8 text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-slate-800">Systems Administration</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Windows Server
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            SQL Server
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Hardware Troubleshooting
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            System Optimization
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Server Management
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="database" class="h-8 w-8 text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-slate-800">IT Service Management</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            ITIL Best Practices
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Incident Management
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Change Management
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Asset Management
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Service Delivery
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="settings" class="h-8 w-8 text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-slate-800">Security Operations & Tools</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Checkmarx
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Kali Linux
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Burp Suite
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            IBM Q Radar (Upcoming)
+                        </li>
+                        <li class="text-slate-600 flex items-center">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                            Microsoft Sentinel (Upcoming)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="gradient-bg rounded-2xl p-8 text-white section-reveal">
+                <h3 class="text-3xl font-bold mb-8 text-center">Professional Certifications</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2025</div>
+                        <div class="font-medium text-white text-sm leading-tight">Microsoft Azure Administrator AZ-104</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2024</div>
+                        <div class="font-medium text-white text-sm leading-tight">Certified in Cybersecurity (ISC2)</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2024</div>
+                        <div class="font-medium text-white text-sm leading-tight">Checkmarx Certified Partner Professional</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2019</div>
+                        <div class="font-medium text-white text-sm leading-tight">Certified Ethical Hacker (CEH-V9)</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2018</div>
+                        <div class="font-medium text-white text-sm leading-tight">Cisco CCNA R&S</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2025</div>
+                        <div class="font-medium text-white text-sm leading-tight">ISO 27001:2022 Fundamentals</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2025</div>
+                        <div class="font-medium text-white text-sm leading-tight">ITIL Essentials</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2023</div>
+                        <div class="font-medium text-white text-sm leading-tight">Security Testing (ALPHIS)</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 card-hover">
+                        <div class="text-sm text-blue-200 mb-1">2025</div>
+                        <div class="font-medium text-white text-sm leading-tight">CSA - Certified SOC Analyst (Upcoming)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 hero-gradient">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">Professional Experience</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    A progressive career journey focused on delivering measurable results and continuous improvement
+                </p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Senior System Administrator -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover section-reveal">
+                    <div class="mb-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">Senior System Administrator</h3>
+                                <div class="flex items-center text-blue-600 font-semibold text-lg mb-2">
+                                    <i data-lucide="trending-up" class="mr-2 h-5 w-5"></i>
+                                    Adaps Digitale Pvt Ltd
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:items-end">
+                                <div class="flex items-center text-slate-600 mb-1">
+                                    <i data-lucide="calendar" class="mr-2 h-4 w-4"></i>
+                                    Aug 2023 – Present
+                                </div>
+                                <div class="flex items-center text-slate-600">
+                                    <i data-lucide="map-pin" class="mr-2 h-4 w-4"></i>
+                                    Hyderabad, India
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">25%</div>
+                                <div class="text-sm text-slate-600">Cost Savings</div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">100%</div>
+                                <div class="text-sm text-slate-600">Compliance Rate</div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">20%</div>
+                                <div class="text-sm text-slate-600">Network Optimization</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-800 mb-4">Key Achievements</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Managed Office 365 & Azure environments, negotiating Microsoft licensing contracts with 5% cost reduction</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Deployed Kaspersky Endpoint Protection ensuring consistent security compliance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Administered network infrastructure with 20% cost savings through ISP negotiations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Maintained full ISO compliance with comprehensive security framework implementation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Implemented ITIL best practices streamlining incident and change management processes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- System Administrator -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover section-reveal">
+                    <div class="mb-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">System Administrator</h3>
+                                <div class="flex items-center text-blue-600 font-semibold text-lg mb-2">
+                                    <i data-lucide="trending-up" class="mr-2 h-5 w-5"></i>
+                                    Adaps IT Pvt Ltd
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:items-end">
+                                <div class="flex items-center text-slate-600 mb-1">
+                                    <i data-lucide="calendar" class="mr-2 h-4 w-4"></i>
+                                    Mar 2022 – Aug 2023
+                                </div>
+                                <div class="flex items-center text-slate-600">
+                                    <i data-lucide="map-pin" class="mr-2 h-4 w-4"></i>
+                                    Hyderabad, India
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">100%</div>
+                                <div class="text-sm text-slate-600">User Issues Resolution</div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">99.9%</div>
+                                <div class="text-sm text-slate-600">System Uptime</div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">100%</div>
+                                <div class="text-sm text-slate-600">Security Compliance</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-800 mb-4">Key Achievements</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Managed O365 admin console with zero escalations in day-to-day operations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Configured diverse tools including SQL Server, Kali Linux, and Genymotion platforms</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Modified domain DNS records and created sub-domains enhancing email campaign effectiveness</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Administered Kaspersky Endpoint Protection ensuring consistent security compliance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Delivered ICT induction sessions strengthening organizational cybersecurity culture</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IT Executive -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover section-reveal">
+                    <div class="mb-6">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-2">IT Executive</h3>
+                                <div class="flex items-center text-blue-600 font-semibold text-lg mb-2">
+                                    <i data-lucide="trending-up" class="mr-2 h-5 w-5"></i>
+                                    The Deccan Hospital
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:items-end">
+                                <div class="flex items-center text-slate-600 mb-1">
+                                    <i data-lucide="calendar" class="mr-2 h-4 w-4"></i>
+                                    Mar 2020 – Mar 2022
+                                </div>
+                                <div class="flex items-center text-slate-600">
+                                    <i data-lucide="map-pin" class="mr-2 h-4 w-4"></i>
+                                    Hyderabad, India
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">99%</div>
+                                <div class="text-sm text-slate-600">System Availability</div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">A+</div>
+                                <div class="text-sm text-slate-600">NABH Compliance</div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-3 text-center">
+                                <div class="text-2xl font-bold text-blue-600">3</div>
+                                <div class="text-sm text-slate-600">Network Blocks</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-800 mb-4">Key Achievements</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Performed hardware troubleshooting for PCs, laptops, printers, and scanners</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Maintained network infrastructure across three different hospital blocks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Coordinated HIMS software troubleshooting with vendor teams</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Managed IT inventory meeting NABH compliance standards for A+ hospital accreditation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                <span class="text-slate-600 leading-relaxed">Maintained COWIN portal during COVID-19 pandemic for vaccination management</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">Key Projects & Case Studies</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                    Strategic initiatives that delivered measurable business value and operational excellence
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 card-hover section-reveal">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i data-lucide="trending-down" class="h-8 w-8 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <span class="text-sm text-blue-600 font-semibold">Cost Optimization</span>
+                                <h3 class="text-xl font-bold text-slate-800">Microsoft Licensing Optimization</h3>
+                            </div>
+                        </div>
+                        <i data-lucide="external-link" class="h-5 w-5 text-slate-400 hover:text-blue-600 cursor-pointer transition-colors"></i>
+                    </div>
+
+                    <p class="text-slate-600 mb-6 leading-relaxed">Negotiated and restructured Microsoft O365 and Azure licensing agreements, achieving significant cost reductions while enhancing feature access.</p>
+
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">5%</div>
+                            <div class="text-xs text-slate-600">Cost Reduction</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">500+</div>
+                            <div class="text-xs text-slate-600">Users Managed</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">50% faster</div>
+                            <div class="text-xs text-slate-600">Time To Provision</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Key Achievements</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">5% reduction in Microsoft licensing costs</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Enhanced O365 feature access within same budget</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Streamlined license management processes</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Technologies Used</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">Microsoft Azure</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">Office 365</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">License Management</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-white rounded-lg border-l-4 border-blue-600">
+                        <p class="text-sm text-slate-700 font-medium">Annual savings of significant budget while improving service quality</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 card-hover section-reveal">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i data-lucide="shield" class="h-8 w-8 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <span class="text-sm text-blue-600 font-semibold">Security Implementation</span>
+                                <h3 class="text-xl font-bold text-slate-800">Enterprise Security Infrastructure</h3>
+                            </div>
+                        </div>
+                        <i data-lucide="external-link" class="h-5 w-5 text-slate-400 hover:text-blue-600 cursor-pointer transition-colors"></i>
+                    </div>
+
+                    <p class="text-slate-600 mb-6 leading-relaxed">Designed and implemented comprehensive endpoint security solution across the organization, ensuring robust security posture.</p>
+
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">25%</div>
+                            <div class="text-xs text-slate-600">Cost Saving</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">100%</div>
+                            <div class="text-xs text-slate-600">Compliance Rate</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">1000+</div>
+                            <div class="text-xs text-slate-600">Endpoints Protected</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Key Achievements</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Deployed Kaspersky Endpoint Protection organization-wide</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Enhanced security compliance and monitoring capabilities</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">25% cost savings on endpoint protection contracts</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Technologies Used</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">Kaspersky</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">Endpoint Security</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">ISO 27001</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-white rounded-lg border-l-4 border-blue-600">
+                        <p class="text-sm text-slate-700 font-medium">Complete security coverage with substantial cost savings and enhanced compliance</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 card-hover section-reveal">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i data-lucide="network" class="h-8 w-8 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <span class="text-sm text-blue-600 font-semibold">Infrastructure Enhancement</span>
+                                <h3 class="text-xl font-bold text-slate-800">Network Infrastructure Optimization</h3>
+                            </div>
+                        </div>
+                        <i data-lucide="external-link" class="h-5 w-5 text-slate-400 hover:text-blue-600 cursor-pointer transition-colors"></i>
+                    </div>
+
+                    <p class="text-slate-600 mb-6 leading-relaxed">Redesigned and optimized network infrastructure to support business scalability while achieving significant cost reductions.</p>
+
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">20%</div>
+                            <div class="text-xs text-slate-600">Cost Reduction</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">99.9%</div>
+                            <div class="text-xs text-slate-600">Uptime Improvement</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">300%</div>
+                            <div class="text-xs text-slate-600">Scalability Increase</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Key Achievements</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">20% cost savings through ISP negotiations</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Improved network performance and reliability</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Enhanced scalability for business growth</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Technologies Used</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">SonicWall</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">Network Administration</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">ISP Management</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-white rounded-lg border-l-4 border-blue-600">
+                        <p class="text-sm text-slate-700 font-medium">Robust, cost-effective network supporting organizational growth</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 card-hover section-reveal">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-white rounded-lg p-3 mr-4">
+                                <i data-lucide="cloud" class="h-8 w-8 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <span class="text-sm text-blue-600 font-semibold">Compliance & Governance</span>
+                                <h3 class="text-xl font-bold text-slate-800">ISO 27001 Compliance Implementation</h3>
+                            </div>
+                        </div>
+                        <i data-lucide="external-link" class="h-5 w-5 text-slate-400 hover:text-blue-600 cursor-pointer transition-colors"></i>
+                    </div>
+
+                    <p class="text-slate-600 mb-6 leading-relaxed">Implemented and maintained comprehensive ISO 27001 Information Security Management System ensuring full organizational compliance.</p>
+
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">100%</div>
+                            <div class="text-xs text-slate-600">Compliance Rate</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">5+</div>
+                            <div class="text-xs text-slate-600">Frameworks Implemented</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 text-center">
+                            <div class="text-lg font-bold text-blue-600">15+</div>
+                            <div class="text-xs text-slate-600">Audits Passed</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Key Achievements</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Achieved full ISO 27001 compliance</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Established comprehensive security framework and processes</span>
+                            </li>
+                            <li class="flex items-start text-sm">
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-slate-600">Regular security audits and assessments</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-sm font-semibold text-slate-800 mb-3">Technologies Used</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">ISO 27001</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">ISMS</span>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">Security Auditing</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-white rounded-lg border-l-4 border-blue-600">
+                        <p class="text-sm text-slate-700 font-medium">Robust security framework with continuous compliance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 gradient-bg">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Let's Connect</h2>
+                <div class="w-20 h-1 bg-blue-400 mx-auto mb-8"></div>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Ready to discuss how I can help optimize your IT infrastructure? Let's start a conversation.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Contact Information -->
+                <div class="space-y-8 section-reveal">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-6">Get In Touch</h3>
+                        <p class="text-slate-300 leading-relaxed mb-8">
+                            I'm always open to discussing new opportunities, collaborations, or just having a 
+                            conversation about systems administration and IT infrastructure optimization. 
+                            Feel free to reach out through any of the channels below.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <a href="mailto:bmr11111@gmail.com" class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300 group">
+                            <i data-lucide="mail" class="h-6 w-6 text-blue-600"></i>
+                            <div class="ml-4">
+                                <div class="text-slate-300 text-sm">Email</div>
+                                <div class="text-white font-medium group-hover:text-blue-300 transition-colors">bmr11111@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:+917989955814" class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300 group">
+                            <i data-lucide="phone" class="h-6 w-6 text-blue-600"></i>
+                            <div class="ml-4">
+                                <div class="text-slate-300 text-sm">Phone</div>
+                                <div class="text-white font-medium group-hover:text-blue-300 transition-colors">+91 7989955814</div>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/mohanreddy-bogireddy" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300 group">
+                            <i data-lucide="linkedin" class="h-6 w-6 text-blue-600"></i>
+                            <div class="ml-4">
+                                <div class="text-slate-300 text-sm">LinkedIn</div>
+                                <div class="text-white font-medium group-hover:text-blue-300 transition-colors">mohanreddy-bogireddy</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/BLAZINGLEO" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300 group">
+                            <i data-lucide="github" class="h-6 w-6 text-blue-600"></i>
+                            <div class="ml-4">
+                                <div class="text-slate-300 text-sm">GitHub</div>
+                                <div class="text-white font-medium group-hover:text-blue-300 transition-colors">BLAZINGLEO</div>
+                            </div>
+                        </a>
+                        <div class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                            <i data-lucide="map-pin" class="h-6 w-6 text-blue-600"></i>
+                            <div class="ml-4">
+                                <div class="text-slate-300 text-sm">Location</div>
+                                <div class="text-white font-medium">Hyderabad, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 section-reveal">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="send" class="h-10 w-10 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Ready to Get Started?</h3>
+                        <p class="text-slate-300 mb-8 leading-relaxed">
+                            Whether you need to optimize your current infrastructure, implement security solutions, 
+                            or discuss long-term IT strategy, I'm here to help your organization achieve its technology goals.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <a href="mailto:bmr11111@gmail.com?subject=Portfolio Inquiry&body=Hi Bogireddy, I'd like to discuss..." class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 btn-hover">
+                                Send Email
+                            </a>
+                            <a href="https://linkedin.com/in/mohanreddy-bogireddy" target="_blank" rel="noopener noreferrer" class="block w-full bg-white/20 hover:bg-white/30 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 border border-white/30">
+                                Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold mb-2">Bogireddy Mohanreddy</div>
+                    <div class="text-slate-400">Senior System Administrator</div>
+                </div>
+
+                <div class="flex items-center space-x-6 mb-6 md:mb-0">
+                    <a href="mailto:bmr11111@gmail.com" class="text-slate-400 hover:text-blue-400 transition-colors duration-200">Email</a>
+                    <a href="https://linkedin.com/in/mohanreddy-bogireddy" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-colors duration-200">LinkedIn</a>
+                    <a href="https://github.com/BLAZINGLEO" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-colors duration-200">GitHub</a>
+                </div>
+
+                <button onclick="scrollToTop()" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition-all duration-300 btn-hover">
+                    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center">
+                <p class="text-slate-400 flex items-center justify-center">
+                    Made with <i data-lucide="heart" class="h-4 w-4 text-red-500 mx-2"></i> by Bogireddy Mohanreddy
+                    <span class="mx-2">•</span>
+                    2025
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Smooth scrolling functionality
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Header scroll effect
+        function handleScroll() {
+            const header = document.getElementById('header');
+            const scrolled = window.scrollY > 50;
+            
+            if (scrolled) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+                header.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.backgroundColor = 'transparent';
+                header.style.backdropFilter = 'none';
+                header.style.boxShadow = 'none';
+            }
+        }
+
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Section reveal animation
+        function revealSections() {
+            const sections = document.querySelectorAll('.section-reveal');
+            const windowHeight = window.innerHeight;
+            
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const revealPoint = 150;
+                
+                if (sectionTop < windowHeight - revealPoint) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        // Event listeners
+        window.addEventListener('scroll', function() {
+            handleScroll();
+            revealSections();
+        });
+
+        window.addEventListener('load', function() {
+            revealSections();
+            // Re-initialize icons after page load
+            lucide.createIcons();
+        });
+
+        // Initialize on DOM ready
+        document.addEventListener('DOMContentLoaded', function() {
+            revealSections();
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
